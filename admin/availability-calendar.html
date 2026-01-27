@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Admin availability calendar — view booked quantities by date and item." />
+  <title>Admin — Availability Calendar</title>
+  <link rel="canonical" href="availability-calendar.html" />
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+
+  <link id="bsLtr" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link id="bsRtl" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet" disabled />
+  <link href="../assets/css/theme.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="admin-shell">
+    <div id="adminSidebarHost"></div>
+
+    <div class="admin-content">
+      <div id="adminTopbarHost"></div>
+
+      <main class="p-3 p-lg-4">
+        <div class="container-fluid px-0">
+          <div class="d-flex flex-column flex-lg-row align-items-lg-center justify-content-between gap-2">
+            <div>
+              <h1 class="h5 mb-1">Availability Calendar</h1>
+              <div class="small text-body-secondary">Operational view of bookings to prevent conflicts and overbooking.</div>
+            </div>
+            <div class="d-flex flex-wrap gap-2">
+              <input type="date" class="form-control" aria-label="Filter by date" />
+              <select class="form-select" aria-label="Filter by item" style="max-width:240px">
+                <option>All items</option>
+                <option>Banquet Chairs</option>
+                <option>Round Tables (60\")</option>
+                <option>LED Wall (12x7)</option>
+              </select>
+              <button class="btn btn-outline-primary" type="button">Add booking</button>
+            </div>
+          </div>
+
+          <div class="card card-soft mt-3" id="availabilityCalendar"></div>
+
+          <div class="row g-3 mt-3">
+            <div class="col-lg-6">
+              <div class="card card-soft p-4">
+                <h2 class="h6">Notes</h2>
+                <ul class="mb-0 text-body-secondary">
+                  <li>Booked quantities are grouped by date.</li>
+                  <li>Maintenance holds reduce availability.</li>
+                  <li>Statuses help dispatch and warehouse teams.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="card card-soft p-4">
+                <h2 class="h6">Operational actions</h2>
+                <div class="d-flex flex-wrap gap-2">
+                  <button class="btn btn-outline-secondary" type="button">Export</button>
+                  <button class="btn btn-outline-secondary" type="button">Print</button>
+                  <button class="btn btn-outline-secondary" type="button">Notify team</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/data.js"></script>
+  <script src="../assets/js/app.js"></script>
+  <script src="assets/js/admin-layout.js"></script>
+  <script src="assets/js/admin-pages.js"></script>
+  <script>
+    ER.mountAdmin('calendar', 'Availability Calendar');
+  </script>
+</body>
+</html>

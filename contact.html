@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Contact EventRent — request a quote or ask about availability." />
+  <title>Contact — EventRent</title>
+  <link rel="canonical" href="contact.html" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+  <link id="bsLtr" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link id="bsRtl" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet" disabled />
+  <link href="assets/css/theme.css" rel="stylesheet" />
+</head>
+<body class="d-flex flex-column">
+  <div id="siteHeader"></div>
+
+  <main class="flex-grow-1">
+    <section class="hero">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-7">
+            <p class="text-uppercase text-body-secondary fw-semibold mb-2">Contact</p>
+            <h1 class="display-6 fw-bold mb-3">Tell us about your event — we’ll confirm availability and pricing.</h1>
+            <p class="lead text-body-secondary mb-0">Share your date, venue, guest count, and must-have items. We’ll reply with next steps.</p>
+          </div>
+          <div class="col-lg-5">
+            <div class="er-media er-media-4x3 er-media-rounded er-media-tint-5"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <h2 class="h2 section-title">Contact</h2>
+            <p class="section-subtitle text-body-secondary">Send your event details and we’ll respond with availability and pricing.</p>
+
+            <div class="card card-soft p-4">
+              <form class="row g-3" onsubmit="return false" aria-label="Contact form">
+                <div class="col-md-6">
+                  <label class="form-label" for="cName">Name</label>
+                  <input id="cName" class="form-control" autocomplete="name" required />
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label" for="cEmail">Email</label>
+                  <input id="cEmail" type="email" class="form-control" autocomplete="email" required />
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label" for="cPhone">Phone</label>
+                  <input id="cPhone" class="form-control" autocomplete="tel" />
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label" for="cDate">Event date</label>
+                  <input id="cDate" type="date" class="form-control" />
+                </div>
+                <div class="col-12">
+                  <label class="form-label" for="cMsg">Message</label>
+                  <textarea id="cMsg" class="form-control" rows="5" placeholder="Tell us what you need (chairs, stage, lights, setup...)" required></textarea>
+                </div>
+                <div class="col-12 d-grid">
+                  <button class="btn btn-primary" type="submit">Send message</button>
+                </div>
+                <div class="col-12">
+                  <p class="form-hint mb-0">Frontend-only demo form. Wire it to your backend/email service.</p>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card card-soft p-4 h-100">
+              <h2 class="h5">Business info</h2>
+              <div class="text-body-secondary">
+                <div class="mb-2"><span class="fw-semibold text-body">Email:</span> support@eventrentpro.example</div>
+                <div class="mb-2"><span class="fw-semibold text-body">Phone:</span> +1 (555) 010-2026</div>
+                <div class="mb-2"><span class="fw-semibold text-body">Hours:</span> Mon-Sat • 9:00 - 18:00</div>
+              </div>
+              <hr />
+              <h3 class="h6">Tip</h3>
+              <p class="text-body-secondary mb-0">For fastest response, build a quote first and paste the summary into your message.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4 mt-4">
+          <div class="col-lg-6">
+            <div class="card card-soft p-4 h-100">
+              <h2 class="h5">What to include in your request</h2>
+              <ul class="text-body-secondary mb-0">
+                <li>Event date, start/end time, and venue address</li>
+                <li>Guest count and preferred layout (seated, cocktail, classroom)</li>
+                <li>Item list (chairs, tables, tent size, staging, lighting, AV)</li>
+                <li>Access notes (stairs, elevator, loading dock, power availability)</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card card-soft p-4 h-100">
+              <h2 class="h5">Response expectations</h2>
+              <div class="text-body-secondary">
+                <div class="mb-2"><span class="fw-semibold text-body">Typical reply:</span> within 1 business day</div>
+                <div class="mb-2"><span class="fw-semibold text-body">Rush requests:</span> call during business hours</div>
+                <div class="mb-0"><span class="fw-semibold text-body">Large events:</span> include floor plan and load-in details</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card-soft p-4 mt-4">
+          <div class="row g-4">
+            <div class="col-lg-5">
+              <h2 class="h5 mb-2">Contact FAQs</h2>
+              <p class="text-body-secondary mb-0">A few quick notes that help customers submit better requests.</p>
+            </div>
+            <div class="col-lg-7">
+              <div class="accordion" id="contactFaq">
+                <div class="accordion-item">
+                  <h3 class="accordion-header" id="contactFaqH1">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#contactFaqC1" aria-expanded="true" aria-controls="contactFaqC1">Do you deliver outside the city?</button>
+                  </h3>
+                  <div id="contactFaqC1" class="accordion-collapse collapse show" aria-labelledby="contactFaqH1" data-bs-parent="#contactFaq">
+                    <div class="accordion-body text-body-secondary">Yes. Travel and transport fees may apply depending on distance and schedule.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h3 class="accordion-header" id="contactFaqH2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contactFaqC2" aria-expanded="false" aria-controls="contactFaqC2">Can you help with layout planning?</button>
+                  </h3>
+                  <div id="contactFaqC2" class="accordion-collapse collapse" aria-labelledby="contactFaqH2" data-bs-parent="#contactFaq">
+                    <div class="accordion-body text-body-secondary">Yes. Share guest count and venue size and we can suggest seating/table quantities and spacing.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h3 class="accordion-header" id="contactFaqH3">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contactFaqC3" aria-expanded="false" aria-controls="contactFaqC3">Do you offer setup and strike?</button>
+                  </h3>
+                  <div id="contactFaqC3" class="accordion-collapse collapse" aria-labelledby="contactFaqH3" data-bs-parent="#contactFaq">
+                    <div class="accordion-body text-body-secondary">Yes. Availability depends on crew schedules and venue access windows.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <div id="siteFooter"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/layout.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script>ER.mountLayout('contact');</script>
+</body>
+</html>

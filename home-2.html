@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="EventRent — event rental focused homepage with inventory availability and quote builder." />
+  <title>EventRent — Event Rentals</title>
+  <link rel="canonical" href="home-2.html" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+  <link id="bsLtr" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link id="bsRtl" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet" disabled />
+  <link href="assets/css/theme.css" rel="stylesheet" />
+</head>
+<body class="d-flex flex-column">
+  <div id="siteHeader"></div>
+
+  <main class="flex-grow-1">
+    <section class="hero bg-body-tertiary">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-7">
+            <h1 class="display-6 fw-bold mb-3">Rent smarter with date-based availability and instant quoting.</h1>
+            <p class="lead text-body-secondary mb-4">Chairs, tables, tents, staging, lighting, sound, and complete setups — all organized in one system.</p>
+            <div class="d-flex flex-wrap gap-2">
+              <a class="btn btn-primary btn-lg" href="quote-builder.html">Start a Quote</a>
+              <a class="btn btn-outline-secondary btn-lg" href="inventory.html">Check Availability</a>
+              <a class="btn btn-outline-secondary btn-lg" href="admin/index.html">Admin Dashboard</a>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="card card-soft p-4">
+              <h2 class="h5 mb-3">Popular Categories</h2>
+              <div class="d-flex flex-wrap gap-2">
+                <a class="btn btn-outline-secondary" href="inventory.html">Seating</a>
+                <a class="btn btn-outline-secondary" href="inventory.html">Tables</a>
+                <a class="btn btn-outline-secondary" href="inventory.html">Tents</a>
+                <a class="btn btn-outline-secondary" href="inventory.html">AV</a>
+                <a class="btn btn-outline-secondary" href="inventory.html">Lighting</a>
+                <a class="btn btn-outline-secondary" href="inventory.html">Stages</a>
+              </div>
+              <p class="form-hint mt-3 mb-0">This template is frontend-only; integrate your backend for live stock and bookings.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <h2 class="section-title h3">Inventory Availability System</h2>
+            <p class="section-subtitle text-body-secondary">Shows what you have, what is booked per date, and what remains available — preventing conflicts and overbooking.</p>
+            <div class="card card-soft p-4 mt-3">
+              <div class="row g-3">
+                <div class="col-md-6"><div class="kpi"><div class="value">Stock</div><div class="label">Total quantities</div></div></div>
+                <div class="col-md-6"><div class="kpi"><div class="value">Booked</div><div class="label">Per selected date</div></div></div>
+                <div class="col-md-6"><div class="kpi"><div class="value">Maintenance</div><div class="label">Damaged/held items</div></div></div>
+                <div class="col-md-6"><div class="kpi"><div class="value">Available</div><div class="label">Auto-calculated</div></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h2 class="section-title h3">Quote Builder</h2>
+            <p class="section-subtitle text-body-secondary">Pick items, set quantities, and instantly generate totals with transport, discounts and taxes.</p>
+            <div class="card card-soft p-4 mt-3">
+              <ol class="mb-0">
+                <li>Select event date</li>
+                <li>Choose items and quantities</li>
+                <li>System validates availability</li>
+                <li>Totals calculated automatically</li>
+                <li>Print-ready quote summary</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-body-tertiary">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <h2 class="h3 section-title">Why EventRent</h2>
+            <p class="section-subtitle text-body-secondary">Designed for real rental workflows: availability, quoting, and operations.</p>
+          </div>
+          <div class="col-lg-8">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="card card-soft h-100 p-4">
+                  <h3 class="h6">Delivery-ready logistics</h3>
+                  <p class="text-body-secondary mb-0">Plan transport fees, pickup windows, and crew needs per order.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card card-soft h-100 p-4">
+                  <h3 class="h6">Clean, accessible UI</h3>
+                  <p class="text-body-secondary mb-0">Mobile-first layout with Light/Dark mode and RTL support.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card card-soft h-100 p-4">
+                  <h3 class="h6">Conflict prevention</h3>
+                  <p class="text-body-secondary mb-0">Avoid double-booking by validating quantities against date-based availability.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card card-soft h-100 p-4">
+                  <h3 class="h6">Print-ready quotes</h3>
+                  <p class="text-body-secondary mb-0">Create customer-ready summaries for approvals and deposits.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <h2 class="h3 section-title">Built for every event type</h2>
+            <p class="section-subtitle text-body-secondary">From intimate gatherings to large-scale productions.</p>
+            <div class="row g-3 mt-2">
+              <div class="col-md-6"><div class="card card-soft p-4 h-100"><h3 class="h6">Weddings</h3><p class="text-body-secondary mb-0">Ceremony seating, reception tables, décor, lighting and tents.</p></div></div>
+              <div class="col-md-6"><div class="card card-soft p-4 h-100"><h3 class="h6">Corporate</h3><p class="text-body-secondary mb-0">Conferences, meetings, stages, AV, and branded setups.</p></div></div>
+              <div class="col-md-6"><div class="card card-soft p-4 h-100"><h3 class="h6">Parties</h3><p class="text-body-secondary mb-0">Backyard events, birthdays, catering tables, bars and tents.</p></div></div>
+              <div class="col-md-6"><div class="card card-soft p-4 h-100"><h3 class="h6">Production</h3><p class="text-body-secondary mb-0">Staging, LED walls, lighting, sound and crew support.</p></div></div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h2 class="h3 section-title">Frequently asked</h2>
+            <p class="section-subtitle text-body-secondary">Policies and expectations that reduce back-and-forth.</p>
+            <div class="accordion mt-3" id="faqHome2">
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="faqHome2H1">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqHome2C1" aria-expanded="true" aria-controls="faqHome2C1">What’s included in delivery?</button>
+                </h3>
+                <div id="faqHome2C1" class="accordion-collapse collapse show" aria-labelledby="faqHome2H1" data-bs-parent="#faqHome2">
+                  <div class="accordion-body text-body-secondary">Delivery includes drop-off and pickup. Setup/strike can be added based on item type and venue requirements.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="faqHome2H2">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqHome2C2" aria-expanded="false" aria-controls="faqHome2C2">Do you require a deposit?</button>
+                </h3>
+                <div id="faqHome2C2" class="accordion-collapse collapse" aria-labelledby="faqHome2H2" data-bs-parent="#faqHome2">
+                  <div class="accordion-body text-body-secondary">Most rentals require a deposit to reserve inventory. Final payment timing can be set to your business policy.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="faqHome2H3">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqHome2C3" aria-expanded="false" aria-controls="faqHome2C3">Can I change my order later?</button>
+                </h3>
+                <div id="faqHome2C3" class="accordion-collapse collapse" aria-labelledby="faqHome2H3" data-bs-parent="#faqHome2">
+                  <div class="accordion-body text-body-secondary">Yes. Changes are usually possible until a cutoff window before delivery, depending on schedule and availability.</div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-wrap gap-2 mt-3">
+              <a class="btn btn-primary" href="inventory.html">Browse inventory</a>
+              <a class="btn btn-outline-secondary" href="contact.html">Contact us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="siteFooter"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/layout.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script>ER.mountLayout('home2');</script>
+</body>
+</html>

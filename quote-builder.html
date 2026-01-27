@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Quote Builder — select date, items, quantities, validate availability, and calculate totals." />
+  <title>Quote Builder — EventRent</title>
+  <link rel="canonical" href="quote-builder.html" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+  <link id="bsLtr" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link id="bsRtl" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet" disabled />
+  <link href="assets/css/theme.css" rel="stylesheet" />
+</head>
+<body class="d-flex flex-column">
+  <div id="siteHeader"></div>
+
+  <main class="flex-grow-1" id="quoteApp">
+    <section class="hero">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-7">
+            <p class="text-uppercase text-body-secondary fw-semibold mb-2">Quote Builder</p>
+            <h1 class="display-6 fw-bold mb-3">Build a clear quote in minutes.</h1>
+            <p class="lead text-body-secondary mb-0">Select a date, add items, and validate availability before sending to your customer.</p>
+          </div>
+          <div class="col-lg-5">
+            <div class="er-media er-media-4x3 er-media-rounded er-media-tint-3"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="d-flex flex-column flex-lg-row align-items-lg-end justify-content-between gap-3">
+          <div>
+            <h2 class="h2 section-title">Quote Builder</h2>
+            <p class="section-subtitle text-body-secondary mb-0">Choose the date first. Availability validation prevents overbooking.</p>
+          </div>
+          <div>
+            <label class="form-label mb-1" for="qbDate">Event date</label>
+            <input id="qbDate" type="date" class="form-control" />
+          </div>
+        </div>
+
+        <div class="row g-4 mt-2">
+          <div class="col-lg-8">
+            <div class="card card-soft p-4">
+              <div class="d-flex align-items-center justify-content-between gap-2">
+                <h2 class="h5 mb-0">Items</h2>
+                <button id="qbAddItem" type="button" class="btn btn-outline-primary">Add item</button>
+              </div>
+
+              <div id="qbRows" class="mt-3" aria-label="Quote items"></div>
+
+              <div class="row g-3 mt-2">
+                <div class="col-md-6">
+                  <label class="form-label" for="qbTransport">Transport</label>
+                  <input id="qbTransport" type="number" class="form-control" min="0" step="1" value="0" />
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label" for="qbDiscount">Discount</label>
+                  <input id="qbDiscount" type="number" class="form-control" min="0" step="1" value="0" />
+                </div>
+                <div class="col-12">
+                  <p class="form-hint mb-0">Pricing is demo-based. Connect to your backend for customer-specific rates and multi-day pricing logic.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-3" id="qbIssues"></div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="card card-soft p-4 quote-summary">
+              <h2 class="h5">Quote Summary</h2>
+              <div id="qbSummary" class="mt-3"></div>
+              <div class="d-grid gap-2 mt-3">
+                <button id="qbPrint" type="button" class="btn btn-primary">Print Quote</button>
+                <a class="btn btn-outline-secondary" href="contact.html">Send inquiry</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4 mt-4">
+          <div class="col-lg-6">
+            <div class="card card-soft p-4 h-100">
+              <h2 class="h5">Tips for accurate quotes</h2>
+              <ul class="text-body-secondary mb-0">
+                <li>Set the event date first so availability validation is accurate.</li>
+                <li>Add buffer quantities for last-minute guest count changes.</li>
+                <li>Include transport for distance, stairs, and after-hours delivery.</li>
+                <li>Use the print summary for approvals and deposits.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card card-soft p-4 h-100">
+              <h2 class="h5">Deposits, holds, and cancellations</h2>
+              <p class="text-body-secondary mb-0">Add your business policy here (deposit percentage, cancellation window, damage waiver). Customers are more likely to book when the rules are clear upfront.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card-soft p-4 mt-4">
+          <div class="row g-4">
+            <div class="col-lg-5">
+              <h2 class="h5 mb-2">Quote FAQs</h2>
+              <p class="text-body-secondary mb-0">Common questions when customers review pricing.</p>
+            </div>
+            <div class="col-lg-7">
+              <div class="accordion" id="qbFaq">
+                <div class="accordion-item">
+                  <h3 class="accordion-header" id="qbFaqH1">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#qbFaqC1" aria-expanded="true" aria-controls="qbFaqC1">Do prices include delivery?</button>
+                  </h3>
+                  <div id="qbFaqC1" class="accordion-collapse collapse show" aria-labelledby="qbFaqH1" data-bs-parent="#qbFaq">
+                    <div class="accordion-body text-body-secondary">Delivery is typically separate and depends on distance, access, and timing. Add it in the Transport field.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h3 class="accordion-header" id="qbFaqH2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#qbFaqC2" aria-expanded="false" aria-controls="qbFaqC2">Can I rent for multiple days?</button>
+                  </h3>
+                  <div id="qbFaqC2" class="accordion-collapse collapse" aria-labelledby="qbFaqH2" data-bs-parent="#qbFaq">
+                    <div class="accordion-body text-body-secondary">This demo uses a single-day model. Connect to your backend to support multi-day pricing and availability.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h3 class="accordion-header" id="qbFaqH3">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#qbFaqC3" aria-expanded="false" aria-controls="qbFaqC3">What if an item is unavailable?</button>
+                  </h3>
+                  <div id="qbFaqC3" class="accordion-collapse collapse" aria-labelledby="qbFaqH3" data-bs-parent="#qbFaq">
+                    <div class="accordion-body text-body-secondary">The system flags issues so you can adjust quantities or select alternatives before sending the quote.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <div id="siteFooter"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/layout.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/quote.js"></script>
+  <script>ER.mountLayout('quote');</script>
+</body>
+</html>
