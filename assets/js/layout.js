@@ -108,7 +108,7 @@ ER.layout = {
         </div>
         <p class="text-body-secondary mb-0">A professional event rental template built for fast quoting and accurate availability.</p>
       </div>
-      <div class="col-6 col-lg-2">
+      <div class="col-sm-6 col-lg-2">
         <h3 class="h6">Links</h3>
         <ul class="list-unstyled mb-0">
           <li><a href="services.html">Services</a></li>
@@ -117,9 +117,9 @@ ER.layout = {
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
-      <div class="col-6 col-lg-3">
+      <div class="col-sm-6 col-lg-3">
         <h3 class="h6">Contact</h3>
-        <ul class="list-unstyled mb-0 text-body-secondary">
+        <ul class="list-unstyled mb-0 text-body-secondary text-break">
           <li>support@eventrentpro.example</li>
           <li>+1 (555) 010-2026</li>
           <li>Mon-Sat • 9:00 - 18:00</li>

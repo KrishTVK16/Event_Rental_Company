@@ -5,7 +5,7 @@ ER.adminLayout = {
     const isActive = (k) => (active === k ? "active" : "");
 
     return `
-<div class="admin-sidebar p-3" id="adminSidebar" aria-label="Admin sidebar">
+<div class="admin-sidebar p-3 d-flex flex-column" id="adminSidebar" aria-label="Admin sidebar">
   <a class="d-flex align-items-center gap-2 text-decoration-none mb-3 brand-link" href="../index.html">
     <span class="brand-mark" aria-hidden="true">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -45,6 +45,11 @@ ER.adminLayout = {
     <a class="nav-link ${isActive("payments")}" href="payments.html">Payments</a>
     <a class="nav-link ${isActive("reports")}" href="reports.html">Reports</a>
   </nav>
+
+  <div class="mt-auto pt-3 border-top">
+    <a class="btn btn-outline-secondary w-100 mb-2" href="../quote-builder.html">Build Quote</a>
+    <a class="btn btn-outline-secondary w-100" href="../index.html">Logout</a>
+  </div>
 </div>`;
   },
 
@@ -54,15 +59,15 @@ ER.adminLayout = {
   <div class="container-fluid px-0">
     <div class="d-flex align-items-center justify-content-between gap-2">
       <div class="d-flex align-items-center gap-2">
-        <button class="btn btn-outline-secondary d-lg-none" type="button" id="adminSidebarToggle" aria-label="Toggle sidebar">Menu</button>
+        <button class="btn btn-outline-secondary btn-icon d-lg-none" type="button" id="adminSidebarToggle" aria-label="Toggle navigation">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
         <div>
-          <div class="fw-semibold">${title || "Dashboard"}</div>
+          <div class="fw-semibold text-break">${title || "Dashboard"}</div>
           <div class="small text-body-secondary">Fast operations • clear visibility</div>
         </div>
-      </div>
-      <div class="d-flex align-items-center gap-2">
-        <a class="btn btn-outline-secondary" href="../index.html" role="button">Logout</a>
-        <a class="btn btn-outline-secondary" href="../quote-builder.html">Build Quote</a>
       </div>
     </div>
   </div>
