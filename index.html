@@ -1,36 +1,57 @@
 <!doctype html>
 <html lang="en" data-bs-theme="light" dir="ltr">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="EventRent — modern event rental website template with inventory availability and quote builder." />
+  <meta name="description"
+    content="EventRent — modern event rental website template with inventory availability and quote builder." />
   <title>EventRent — Home</title>
   <link rel="canonical" href="index.html" />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
 
   <link id="bsLtr" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link id="bsRtl" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet" disabled />
+  <link id="bsRtl" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet"
+    disabled />
   <link href="assets/css/theme.css" rel="stylesheet" />
 </head>
+
 <body class="d-flex flex-column">
   <div id="siteHeader"></div>
 
   <main class="flex-grow-1">
-    <section class="hero">
+    <section class="hero" style="background-image: url('assets/img/DecorDetails.jfif');">
       <div class="container">
         <div class="row align-items-center g-4">
           <div class="col-lg-6">
             <p class="text-uppercase text-body-secondary fw-semibold mb-2">Event Rental Company</p>
-            <h1 class="display-5 fw-bold mb-3">Professional rentals for weddings, corporate events, and productions.</h1>
-            <p class="lead text-body-secondary mb-4">A clean multipurpose template with inventory availability, instant quoting, Light/Dark mode, and RTL support.</p>
+            <h1 class="display-5 fw-bold mb-3">Professional rentals for weddings, corporate events, and productions.
+            </h1>
+            <p class="lead text-body-secondary mb-4">A clean multipurpose template with inventory availability, instant
+              quoting, Light/Dark mode, and RTL support.</p>
             <div class="d-flex flex-wrap gap-2">
               <a class="btn btn-primary btn-lg" href="inventory.html">Browse Inventory</a>
               <a class="btn btn-outline-secondary btn-lg" href="quote-builder.html">Build a Quote</a>
             </div>
             <div class="row g-2 mt-4">
-              <div class="col-6 col-md-4"><div class="kpi"><div class="value">500+</div><div class="label">Seating units</div></div></div>
-              <div class="col-6 col-md-4"><div class="kpi"><div class="value">Real-time</div><div class="label">Availability</div></div></div>
-              <div class="col-6 col-md-4"><div class="kpi"><div class="value">Instant</div><div class="label">Quotations</div></div></div>
+              <div class="col-6 col-md-4">
+                <div class="kpi">
+                  <div class="value">500+</div>
+                  <div class="label">Seating units</div>
+                </div>
+              </div>
+              <div class="col-6 col-md-4">
+                <div class="kpi">
+                  <div class="value">Real-time</div>
+                  <div class="label">Availability</div>
+                </div>
+              </div>
+              <div class="col-6 col-md-4">
+                <div class="kpi">
+                  <div class="value">Instant</div>
+                  <div class="label">Quotations</div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="col-lg-6">
@@ -59,12 +80,15 @@
                     <div class="small text-body-secondary" id="qaMeta"></div>
                   </div>
                 </div>
-                <div class="col-12 d-flex gap-2">
-                  <a class="btn btn-primary" href="quote-builder.html">Create quote</a>
-                  <a class="btn btn-outline-secondary" href="inventory.html">View inventory</a>
+                <div class="col-12 card-footer-center">
+                  <div class="d-flex gap-2">
+                    <a class="btn btn-primary" href="quote-builder.html">Create quote</a>
+                    <a class="btn btn-outline-secondary" href="inventory.html">View inventory</a>
+                  </div>
                 </div>
               </form>
-              <p class="form-hint mt-3 mb-0">This is a demo availability check powered by sample data. Connect to your backend later.</p>
+              <p class="form-hint mt-3 mb-0">This is a demo availability check powered by sample data. Connect to your
+                backend later.</p>
             </div>
           </div>
         </div>
@@ -76,7 +100,8 @@
         <div class="d-flex flex-wrap align-items-end justify-content-between gap-2">
           <div>
             <h2 class="h3 section-title">Browse by category</h2>
-            <p class="section-subtitle text-body-secondary">Popular categories customers rent for weddings, corporate events, and parties.</p>
+            <p class="section-subtitle text-body-secondary">Popular categories customers rent for weddings, corporate
+              events, and parties.</p>
           </div>
           <a class="btn btn-outline-secondary" href="inventory.html">View all inventory</a>
         </div>
@@ -84,7 +109,9 @@
         <div class="row g-3 mt-2">
           <div class="col-6 col-md-4 col-lg-2">
             <a class="card card-soft er-card-link h-100" href="inventory.html">
-              <div class="er-media er-media-square er-media-tint-1"></div>
+              <div class="er-media er-media-square"
+                style="background-image: url('assets/img/Chairs.jfif'); background-size: cover; background-position: center;">
+              </div>
               <div class="p-3">
                 <div class="fw-semibold">Chairs</div>
                 <div class="small text-body-secondary">Seating</div>
@@ -93,7 +120,9 @@
           </div>
           <div class="col-6 col-md-4 col-lg-2">
             <a class="card card-soft er-card-link h-100" href="inventory.html">
-              <div class="er-media er-media-square er-media-tint-2"></div>
+              <div class="er-media er-media-square"
+                style="background-image: url('assets/img/Table.jfif'); background-size: cover; background-position: center;">
+              </div>
               <div class="p-3">
                 <div class="fw-semibold">Tables</div>
                 <div class="small text-body-secondary">Dining</div>
@@ -102,7 +131,9 @@
           </div>
           <div class="col-6 col-md-4 col-lg-2">
             <a class="card card-soft er-card-link h-100" href="inventory.html">
-              <div class="er-media er-media-square er-media-tint-3"></div>
+              <div class="er-media er-media-square"
+                style="background-image: url('assets/img/Tents.jfif'); background-size: cover; background-position: center;">
+              </div>
               <div class="p-3">
                 <div class="fw-semibold">Tents</div>
                 <div class="small text-body-secondary">Outdoor</div>
@@ -111,7 +142,9 @@
           </div>
           <div class="col-6 col-md-4 col-lg-2">
             <a class="card card-soft er-card-link h-100" href="inventory.html">
-              <div class="er-media er-media-square er-media-tint-4"></div>
+              <div class="er-media er-media-square"
+                style="background-image: url('assets/img/Lightings.jfif'); background-size: cover; background-position: center;">
+              </div>
               <div class="p-3">
                 <div class="fw-semibold">Lighting</div>
                 <div class="small text-body-secondary">Ambience</div>
@@ -120,7 +153,9 @@
           </div>
           <div class="col-6 col-md-4 col-lg-2">
             <a class="card card-soft er-card-link h-100" href="inventory.html">
-              <div class="er-media er-media-square er-media-tint-5"></div>
+              <div class="er-media er-media-square"
+                style="background-image: url('assets/img/Stage.jfif'); background-size: cover; background-position: center;">
+              </div>
               <div class="p-3">
                 <div class="fw-semibold">Stage + AV</div>
                 <div class="small text-body-secondary">Production</div>
@@ -129,7 +164,9 @@
           </div>
           <div class="col-6 col-md-4 col-lg-2">
             <a class="card card-soft er-card-link h-100" href="inventory.html">
-              <div class="er-media er-media-square er-media-tint-6"></div>
+              <div class="er-media er-media-square"
+                style="background-image: url('assets/img/DecorDetails.jfif'); background-size: cover; background-position: center;">
+              </div>
               <div class="p-3">
                 <div class="fw-semibold">Decor</div>
                 <div class="small text-body-secondary">Details</div>
@@ -146,17 +183,20 @@
           <div class="col-lg-4">
             <div class="icon-circle mb-3" aria-hidden="true">1</div>
             <h2 class="h5">Accurate availability</h2>
-            <p class="text-body-secondary mb-0">Prevent overbooking by tracking stock, booked quantities, and maintenance holds by date.</p>
+            <p class="text-body-secondary mb-0">Prevent overbooking by tracking stock, booked quantities, and
+              maintenance holds by date.</p>
           </div>
           <div class="col-lg-4">
             <div class="icon-circle mb-3" aria-hidden="true">2</div>
             <h2 class="h5">Instant quote builder</h2>
-            <p class="text-body-secondary mb-0">Select items, set quantities, apply transport, discount and tax, and generate a customer-ready quote.</p>
+            <p class="text-body-secondary mb-0">Select items, set quantities, apply transport, discount and tax, and
+              generate a customer-ready quote.</p>
           </div>
           <div class="col-lg-4">
             <div class="icon-circle mb-3" aria-hidden="true">3</div>
             <h2 class="h5">Admin dashboard</h2>
-            <p class="text-body-secondary mb-0">A clean admin UI for inventory, calendar availability, quotes, bookings, customers, and reporting.</p>
+            <p class="text-body-secondary mb-0">A clean admin UI for inventory, calendar availability, quotes, bookings,
+              customers, and reporting.</p>
           </div>
         </div>
       </div>
@@ -167,13 +207,15 @@
         <div class="row align-items-start g-4">
           <div class="col-lg-6">
             <h2 class="h3 section-title">How it works</h2>
-            <p class="section-subtitle text-body-secondary">A simple flow your customers understand — and your team can fulfill.</p>
+            <p class="section-subtitle text-body-secondary">A simple flow your customers understand — and your team can
+              fulfill.</p>
             <div class="card card-soft p-4 mt-3">
               <div class="d-flex gap-3">
                 <div class="icon-circle" aria-hidden="true">1</div>
                 <div>
                   <h3 class="h6 mb-1">Pick a date + items</h3>
-                  <p class="text-body-secondary mb-0">Browse inventory by category and choose quantities based on your guest count.</p>
+                  <p class="text-body-secondary mb-0">Browse inventory by category and choose quantities based on your
+                    guest count.</p>
                 </div>
               </div>
               <hr />
@@ -181,7 +223,8 @@
                 <div class="icon-circle" aria-hidden="true">2</div>
                 <div>
                   <h3 class="h6 mb-1">Check availability instantly</h3>
-                  <p class="text-body-secondary mb-0">Availability is calculated per date from stock, bookings, and maintenance holds.</p>
+                  <p class="text-body-secondary mb-0">Availability is calculated per date from stock, bookings, and
+                    maintenance holds.</p>
                 </div>
               </div>
               <hr />
@@ -189,37 +232,63 @@
                 <div class="icon-circle" aria-hidden="true">3</div>
                 <div>
                   <h3 class="h6 mb-1">Get a clear quote</h3>
-                  <p class="text-body-secondary mb-0">Totals update automatically with transport, discounts and taxes.</p>
+                  <p class="text-body-secondary mb-0">Totals update automatically with transport, discounts and taxes.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-lg-6">
             <h2 class="h3 section-title">Popular rental packages</h2>
-            <p class="section-subtitle text-body-secondary">Pre-built bundles that make ordering faster for common events.</p>
+            <p class="section-subtitle text-body-secondary">Pre-built bundles that make ordering faster for common
+              events.</p>
             <div class="row g-3 mt-2">
               <div class="col-md-6">
                 <div class="card card-soft h-100 p-4">
-                  <h3 class="h6">Wedding Essentials</h3>
-                  <p class="text-body-secondary mb-0">Ceremony seating, cocktail tables, reception tables, linens, and lighting add-ons.</p>
+                  <div class="card-body-grow">
+                    <h3 class="h6">Wedding Essentials</h3>
+                    <p class="text-body-secondary mb-0">Ceremony seating, cocktail tables, reception tables, linens, and
+                      lighting add-ons.</p>
+                  </div>
+                  <div class="card-footer-center">
+                    <a class="btn btn-outline-primary btn-sm" href="quote-builder.html">View Package</a>
+                  </div>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="card card-soft h-100 p-4">
-                  <h3 class="h6">Corporate Setup</h3>
-                  <p class="text-body-secondary mb-0">Conference seating, staging, lectern, PA system, and presentation display options.</p>
+                  <div class="card-body-grow">
+                    <h3 class="h6">Corporate Setup</h3>
+                    <p class="text-body-secondary mb-0">Conference seating, staging, lectern, PA system, and
+                      presentation display options.</p>
+                  </div>
+                  <div class="card-footer-center">
+                    <a class="btn btn-outline-primary btn-sm" href="quote-builder.html">View Package</a>
+                  </div>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="card card-soft h-100 p-4">
-                  <h3 class="h6">Backyard Party</h3>
-                  <p class="text-body-secondary mb-0">Tent, banquet tables, chairs, string lights, and optional cooler/bar stations.</p>
+                  <div class="card-body-grow">
+                    <h3 class="h6">Backyard Party</h3>
+                    <p class="text-body-secondary mb-0">Tent, banquet tables, chairs, string lights, and optional
+                      cooler/bar stations.</p>
+                  </div>
+                  <div class="card-footer-center">
+                    <a class="btn btn-outline-primary btn-sm" href="quote-builder.html">View Package</a>
+                  </div>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="card card-soft h-100 p-4">
-                  <h3 class="h6">Stage + AV</h3>
-                  <p class="text-body-secondary mb-0">Modular stage, steps, skirting, uplighting, speakers, microphones, and tech support.</p>
+                  <div class="card-body-grow">
+                    <h3 class="h6">Stage + AV</h3>
+                    <p class="text-body-secondary mb-0">Modular stage, steps, skirting, uplighting, speakers,
+                      microphones, and tech support.</p>
+                  </div>
+                  <div class="card-footer-center">
+                    <a class="btn btn-outline-primary btn-sm" href="quote-builder.html">View Package</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -237,7 +306,8 @@
         <div class="d-flex flex-wrap align-items-end justify-content-between gap-2">
           <div>
             <h2 class="h3 section-title">Featured items</h2>
-            <p class="section-subtitle text-body-secondary">A quick snapshot of high-demand rentals. Replace placeholders with real photos anytime.</p>
+            <p class="section-subtitle text-body-secondary">A quick snapshot of high-demand rentals. Replace
+              placeholders with real photos anytime.</p>
           </div>
           <div class="d-flex flex-wrap gap-2">
             <a class="btn btn-primary" href="quote-builder.html">Build a quote</a>
@@ -248,7 +318,9 @@
         <div class="row g-3 mt-2">
           <div class="col-6 col-md-4 col-lg-3">
             <a class="card card-soft er-card-link h-100" href="inventory.html">
-              <div class="er-media er-media-4x3 er-media-tint-2"></div>
+              <div class="er-media er-media-4x3"
+                style="background-image: url('assets/img/BanquetChairs.jfif'); background-size: cover; background-position: center;">
+              </div>
               <div class="p-3">
                 <div class="fw-semibold">Banquet Chairs</div>
                 <div class="small text-body-secondary">Comfortable, stackable</div>
@@ -257,7 +329,9 @@
           </div>
           <div class="col-6 col-md-4 col-lg-3">
             <a class="card card-soft er-card-link h-100" href="inventory.html">
-              <div class="er-media er-media-4x3 er-media-tint-1"></div>
+              <div class="er-media er-media-4x3"
+                style="background-image: url('assets/img/RoundTables.jfif'); background-size: cover; background-position: center;">
+              </div>
               <div class="p-3">
                 <div class="fw-semibold">Round Tables</div>
                 <div class="small text-body-secondary">60\" dining</div>
@@ -266,7 +340,9 @@
           </div>
           <div class="col-6 col-md-4 col-lg-3">
             <a class="card card-soft er-card-link h-100" href="inventory.html">
-              <div class="er-media er-media-4x3 er-media-tint-3"></div>
+              <div class="er-media er-media-4x3"
+                style="background-image: url('assets/img/Tents.jfif'); background-size: cover; background-position: center;">
+              </div>
               <div class="p-3">
                 <div class="fw-semibold">Tent (20x40)</div>
                 <div class="small text-body-secondary">Outdoor coverage</div>
@@ -275,7 +351,9 @@
           </div>
           <div class="col-6 col-md-4 col-lg-3">
             <a class="card card-soft er-card-link h-100" href="inventory.html">
-              <div class="er-media er-media-4x3 er-media-tint-4"></div>
+              <div class="er-media er-media-4x3"
+                style="background-image: url('assets/img/LEDUplighting.jfif'); background-size: cover; background-position: center;">
+              </div>
               <div class="p-3">
                 <div class="fw-semibold">LED Uplighting</div>
                 <div class="small text-body-secondary">Mood + color</div>
@@ -284,7 +362,9 @@
           </div>
           <div class="col-6 col-md-4 col-lg-3">
             <a class="card card-soft er-card-link h-100" href="inventory.html">
-              <div class="er-media er-media-4x3 er-media-tint-6"></div>
+              <div class="er-media er-media-4x3"
+                style="background-image: url('assets/img/Table.jfif'); background-size: cover; background-position: center;">
+              </div>
               <div class="p-3">
                 <div class="fw-semibold">Cocktail Tables</div>
                 <div class="small text-body-secondary">Standing events</div>
@@ -293,7 +373,9 @@
           </div>
           <div class="col-6 col-md-4 col-lg-3">
             <a class="card card-soft er-card-link h-100" href="inventory.html">
-              <div class="er-media er-media-4x3 er-media-tint-5"></div>
+              <div class="er-media er-media-4x3"
+                style="background-image: url('assets/img/Stage.jfif'); background-size: cover; background-position: center;">
+              </div>
               <div class="p-3">
                 <div class="fw-semibold">Stage Panels</div>
                 <div class="small text-body-secondary">Modular platform</div>
@@ -302,7 +384,9 @@
           </div>
           <div class="col-6 col-md-4 col-lg-3">
             <a class="card card-soft er-card-link h-100" href="inventory.html">
-              <div class="er-media er-media-4x3 er-media-tint-1"></div>
+              <div class="er-media er-media-4x3"
+                style="background-image: url('assets/img/Stage.jfif'); background-size: cover; background-position: center;">
+              </div>
               <div class="p-3">
                 <div class="fw-semibold">PA Speakers</div>
                 <div class="small text-body-secondary">Clear sound</div>
@@ -311,7 +395,9 @@
           </div>
           <div class="col-6 col-md-4 col-lg-3">
             <a class="card card-soft er-card-link h-100" href="inventory.html">
-              <div class="er-media er-media-4x3 er-media-tint-2"></div>
+              <div class="er-media er-media-4x3"
+                style="background-image: url('assets/img/BackdropStand.jfif'); background-size: cover; background-position: center;">
+              </div>
               <div class="p-3">
                 <div class="fw-semibold">Backdrop Stand</div>
                 <div class="small text-body-secondary">Photos + signage</div>
@@ -333,26 +419,37 @@
             <div class="accordion" id="faqHome">
               <div class="accordion-item">
                 <h3 class="accordion-header" id="faqHomeH1">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqHomeC1" aria-expanded="true" aria-controls="faqHomeC1">Do you deliver and set up?</button>
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqHomeC1"
+                    aria-expanded="true" aria-controls="faqHomeC1">Do you deliver and set up?</button>
                 </h3>
-                <div id="faqHomeC1" class="accordion-collapse collapse show" aria-labelledby="faqHomeH1" data-bs-parent="#faqHome">
-                  <div class="accordion-body text-body-secondary">Yes. Delivery, setup, and strike are available. Fees depend on distance, crew size, and timing.</div>
+                <div id="faqHomeC1" class="accordion-collapse collapse show" aria-labelledby="faqHomeH1"
+                  data-bs-parent="#faqHome">
+                  <div class="accordion-body text-body-secondary">Yes. Delivery, setup, and strike are available. Fees
+                    depend on distance, crew size, and timing.</div>
                 </div>
               </div>
               <div class="accordion-item">
                 <h3 class="accordion-header" id="faqHomeH2">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqHomeC2" aria-expanded="false" aria-controls="faqHomeC2">How far in advance should we book?</button>
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faqHomeC2" aria-expanded="false" aria-controls="faqHomeC2">How far in advance
+                    should we book?</button>
                 </h3>
-                <div id="faqHomeC2" class="accordion-collapse collapse" aria-labelledby="faqHomeH2" data-bs-parent="#faqHome">
-                  <div class="accordion-body text-body-secondary">Peak weekends book quickly. For weddings and large events, 4–12 weeks is recommended.</div>
+                <div id="faqHomeC2" class="accordion-collapse collapse" aria-labelledby="faqHomeH2"
+                  data-bs-parent="#faqHome">
+                  <div class="accordion-body text-body-secondary">Peak weekends book quickly. For weddings and large
+                    events, 4–12 weeks is recommended.</div>
                 </div>
               </div>
               <div class="accordion-item">
                 <h3 class="accordion-header" id="faqHomeH3">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqHomeC3" aria-expanded="false" aria-controls="faqHomeC3">Is availability real-time?</button>
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faqHomeC3" aria-expanded="false" aria-controls="faqHomeC3">Is availability
+                    real-time?</button>
                 </h3>
-                <div id="faqHomeC3" class="accordion-collapse collapse" aria-labelledby="faqHomeH3" data-bs-parent="#faqHome">
-                  <div class="accordion-body text-body-secondary">This template includes demo data. Connect it to your backend to reflect real inventory and bookings.</div>
+                <div id="faqHomeC3" class="accordion-collapse collapse" aria-labelledby="faqHomeH3"
+                  data-bs-parent="#faqHome">
+                  <div class="accordion-body text-body-secondary">This template includes demo data. Connect it to your
+                    backend to reflect real inventory and bookings.</div>
                 </div>
               </div>
             </div>
@@ -370,15 +467,15 @@
   <script src="assets/js/app.js"></script>
   <script>
     ER.mountLayout('home1');
-    (function(){
+    (function () {
       const dateEl = document.getElementById('qaDate');
       const itemEl = document.getElementById('qaItem');
       const out = document.getElementById('qaAvailable');
       const meta = document.getElementById('qaMeta');
-      const pad = (n)=>String(n).padStart(2,'0');
-      const d=new Date();
-      dateEl.value = `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
-      function update(){
+      const pad = (n) => String(n).padStart(2, '0');
+      const d = new Date();
+      dateEl.value = `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+      function update() {
         const a = ER.getAvailability(dateEl.value, itemEl.value);
         out.textContent = a ? a.available : '—';
         meta.textContent = a ? `Stock ${a.stock} • Booked ${a.booked} • Maintenance ${a.maintenance}` : '';
@@ -389,4 +486,5 @@
     })();
   </script>
 </body>
+
 </html>

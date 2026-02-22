@@ -268,14 +268,32 @@ body.er-loaded {
 
 .hero {
   padding: 6rem 0;
-  background: var(--grad-hero);
-  background-image: var(--hero-image), var(--grad-hero);
-  background-size: cover, auto;
-  background-position: center, center;
+  background-color: var(--grad-hero);
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   position: relative;
   overflow: hidden;
-  border-bottom: 1px solid var(--soft-border)
+  border-bottom: 1px solid var(--soft-border);
+  display: flex;
+  align-items: center;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(223, 218, 156, 0.92) 0%, rgba(223, 218, 156, 0.6) 50%, rgba(223, 218, 156, 0.2) 100%);
+  z-index: 1;
+}
+
+[data-bs-theme="dark"] .hero::after {
+  background: linear-gradient(to right, rgba(5, 9, 19, 0.92) 0%, rgba(5, 9, 19, 0.6) 50%, rgba(5, 9, 19, 0.2) 100%);
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
 }
 
 .hero .lead {
@@ -359,15 +377,33 @@ body.er-loaded {
   background: var(--surface-1);
   backdrop-filter: blur(var(--glass-blur));
   -webkit-backdrop-filter: blur(var(--glass-blur));
-  box-shadow: var(--shadow-md)
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
 }
 
 .card-soft:hover {
   box-shadow: var(--shadow-lg)
 }
 
+.card-footer-center {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 1rem;
+}
+
+.card-body-grow {
+  flex-grow: 1;
+}
+
 .er-card-link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   color: inherit;
   text-decoration: none
 }
